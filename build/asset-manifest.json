@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8c5bd9fd.chunk.css",
+    "main.js": "/static/js/main.eae7888c.chunk.js",
+    "main.js.map": "/static/js/main.eae7888c.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.77e770e5.js",
+    "runtime-main.js.map": "/static/js/runtime-main.77e770e5.js.map",
+    "static/js/2.9f1bc60e.chunk.js": "/static/js/2.9f1bc60e.chunk.js",
+    "static/js/2.9f1bc60e.chunk.js.map": "/static/js/2.9f1bc60e.chunk.js.map",
+    "static/js/3.f2eb399b.chunk.js": "/static/js/3.f2eb399b.chunk.js",
+    "static/js/3.f2eb399b.chunk.js.map": "/static/js/3.f2eb399b.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.8c5bd9fd.chunk.css.map": "/static/css/main.8c5bd9fd.chunk.css.map",
+    "static/js/2.9f1bc60e.chunk.js.LICENSE.txt": "/static/js/2.9f1bc60e.chunk.js.LICENSE.txt",
+    "static/media/sidd.344c65ef.png": "/static/media/sidd.344c65ef.png",
+    "static/media/skills_gadgets.6ff70776.png": "/static/media/skills_gadgets.6ff70776.png",
+    "static/media/App.css": "/static/media/wooden-background.f3798710.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.77e770e5.js",
+    "static/js/2.9f1bc60e.chunk.js",
+    "static/css/main.8c5bd9fd.chunk.css",
+    "static/js/main.eae7888c.chunk.js"
+  ]
+}
