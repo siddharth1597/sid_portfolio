@@ -1,38 +1,229 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Changa:wght@200&family=Play&family=Satisfy&display=swap');
+
+body {
+  font-family: 'Changa', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+::selection {
   color: white;
+  background: rgb(218, 162, 10);;
 }
 
-.App-link {
-  color: #61dafb;
+.App {
+  background-image: url('./wooden-background.jpg');
+  background-size: contain;
+  background-attachment: fixed;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.name {
+  font-family: 'Satisfy', cursive;
+}
+
+.designation {
+  font-family: 'Play', sans-serif;
+}
+
+.profile {
+  width: 48%;
+  padding: 80px;
+  position: relative;
+  border: 5px solid #fff;
+  border-radius: 50%;
+}
+
+.profile-pic {
+  border-radius: 47%;
+  width: 102%;
+  position: absolute;
+  top: -29px;
+  right: -3px;
+}
+
+.skill-parent {
+  width: 100%;
+}
+
+.title-heading {
+  font-family: 'Amatic SC', cursive;
+  color: rgb(145, 86, 15);
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.contact-info > div:first-child, .achievements-info  > div:first-child,  .certification-info  > div:first-child,
+.personal-project-info > div:first-child  {
+  margin-top: 15px;
+}
+
+.contact-info > div, .education > div, .achievements-info > div, .certification-info  > div,
+.personal-project-info > div {
+  margin-top: 10px;
+}
+
+.resume-details > div:nth-child(2n-1) {
+  padding-left: 64px !important;
+  padding-right: 32px !important;
+}
+
+.description {
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.tag {
+  display: flex;
+}
+
+.tag .rectangle {
+  height: fit-content;
+  padding: 3px 5px;
+  font-weight: 600;
+  border-right: 0;
+  background-color: rgb(218, 162, 10);
+}
+
+.tag .right-triangle {
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-left: 18px solid rgb(218, 162, 10);
+  border-bottom: 15px solid transparent;
+}
+
+.current-org, .stream {
+  color: rgb(218, 162, 10);
+}
+
+.langauge-skills {
+  border-radius: 15px;
+  border: 3px solid rgb(218, 162, 10);
+  background-color: rgb(17, 17, 17);
+  padding: 8px 15px;
+  float: left;
+  text-align: center;
+  margin-top: 4px;
+}
+
+.resume-row-3 > div:last-child {
+  margin-top: -25px;
+}
+
+.resume-row-3 > div:first-child {
+  margin-top: -15px;
+}
+
+.line {
+  background-color: white;
+  text-align: end;
+  position: absolute;
+}
+
+.profile-info .line:nth-child(1) {
+  top: 15%;
+  right: 0;
+}
+
+.profile-info .line:nth-child(3) {
+  top: 15%;
+  right: 0;
+}
+
+.front-skill-image {
+  z-index: 10;
+}
+
+.width-line {
+  width: 2px;
+}
+
+.height-line {
+  height: 2px;
+}
+
+.resume-row-1 > div:first-child > .line {
+  left: 50%;
+}
+
+.resume-row-1 > div:first-child > .line:last-child {
+  bottom: -75px;
+}
+
+.resume-row-1 > div:first-child > .line.width-line::before,
+.profile-info .line:nth-child(3)::before,
+.resume-row-1 > div:last-child.line::before,
+.resume-row-2 > div:last-child > .line:nth-child(2)::after,
+.resume-row-2 > div:first-child > .line:last-child::after,
+.front-skill-image > .line.width-line::after {
+  border: 2.5px solid white;
+  border-radius: 50%;
+  content: '';
+  padding: 3px;
+  position: absolute;
+  top: -9px;
+  left: -4px;
+}
+
+.profile-info .line:nth-child(3)::before {
+  top: -3px;
+  left: -8px;
+}
+
+.resume-row-2 > div:last-child > .line:first-child {
+  top: 58%;
+  left: 0;
+}
+
+.resume-row-1 > div:last-child {
+  right: 0;
+  padding: 0;
+  top: 32%;
+}
+
+.resume-row-2 > div:last-child > .line:last-child {
+  bottom: 12%;
+  left: -20%;
+}
+
+.resume-row-2 > div:last-child > .line:nth-child(2) {
+  bottom: -12.5%;
+  left: 30%;
+}
+
+.resume-row-2 > div:last-child > .line:nth-child(2)::after,
+.resume-row-2 > div:first-child > .line:last-child::after,
+.front-skill-image > .line.width-line::after {
+  bottom: -9px;
+  top: auto;
+}
+
+.resume-row-2 > div:first-child > .line {
+  bottom: 40%;
+  right: -18%;
+}
+
+.resume-row-2 > div:first-child > .line:last-child {
+  bottom: 15%;
+  right: -18%;
+}
+
+.front-skill-image > .line {
+  left: 40%;
+  bottom: -15%;
+}
+
+.front-skill-image > .line.height-line {
+  bottom: -5%;
+  left: -10%;
+}
+
+.front-skill-image > .line:last-child {
+  bottom: -15%;
+  left: -10%;
+  height: 10%;
+}
+
+@media only screen and (max-width: 1400px) {
+  .line {
+    display: none !important;
   }
 }

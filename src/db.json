@@ -1,0 +1,65 @@
+{
+  "Resume": [
+    {
+      "name": "Siddharth Rastogi",
+      "designation": "A FULL STACK DEVELOPER",
+      "message_to_others": "I Love to develop",
+      "contact" : {
+        "phone": "+91 8938052752",
+        "email": "sidd15597@gmail.com",
+        "location": "Bangalore, IN"
+      },
+      "social_id": {
+        "linkedin": "linkedin.com/in/siddharth-rastogi-bb2a77145"
+      },
+      "about": "Hi, I have great experience in Web development. I have worked on many projects earlier, which makes me better, and I have responsible career opportunities to fully utilize my skills while making a significant contribution to the team's and client's success.",
+      "education": {
+        "year": "2015/19",
+        "course": "Btech",
+        "stream": "Computer Science & Engineering",
+        "university": "AKTU, Uttar Pradesh"
+      },
+      "technical_skills": [
+        {
+          "skill": "Js"
+        },
+        {
+          "skill": "HTML"
+        },
+        {
+          "skill": "CSS"
+        },
+        {
+          "skill": "SASS"
+        },
+        {
+          "skill": "Bootstrap"
+        },
+        {
+          "skill": "React.js"
+        },
+        {
+          "skill": "PHP"
+        },
+        {
+          "skill": "Laravel"
+        },
+        {
+          "skill": "Drupal"
+        },
+        {
+          "skill": "Java"
+        },
+        {
+          "skill": "Git"
+        },
+        {
+          "skill": "CI/CD"
+        }
+      ],
+      "personal_projects": [
+        
+      ]
+    }
+  ]
+}
