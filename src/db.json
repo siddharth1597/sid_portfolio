@@ -1,65 +1,136 @@
 {
-  "Resume": [
-    {
-      "name": "Siddharth Rastogi",
-      "designation": "A FULL STACK DEVELOPER",
-      "message_to_others": "I Love to develop",
-      "contact" : {
+  "name": "Siddharth Rastogi",
+  "designation": "A FULL STACK DEVELOPER",
+  "message_to_others": "I Love to develop",
+  "titles": {
+    "work_experience": {
+      "name": "Work Experience",
+      "company": [
+        {
+          "year": "2019",
+          "company_name": "Wipro Ltd.",
+          "current": true,
+          "designation": "Web developer",
+          "summary": [
+            "Developed the components of the website using JQuery, HTML/CSS/SASS to make the easier way for the customer to create the static as well as dynamic pages.",
+            "Have done the API Integration.",
+            "Create Internet Banking web application in training"
+          ]
+        },
+        {
+          "year": "2017",
+          "company_name": "Boxinall Softech",
+          "current": false,
+          "designation": "Full Stack Developer (Part-time)",
+          "summary": [
+            "Worked on many projects and takes the ownership and have learned many things from the startup company.",
+            "Worked on the Mobile applications, Web applications and deliver them successfully to clients."
+          ]
+        }
+      ]
+    },
+    "contacts": {
+      "name": "Contact",
+      "details": {
         "phone": "+91 8938052752",
         "email": "sidd15597@gmail.com",
         "location": "Bangalore, IN"
       },
       "social_id": {
         "linkedin": "linkedin.com/in/siddharth-rastogi-bb2a77145"
-      },
-      "about": "Hi, I have great experience in Web development. I have worked on many projects earlier, which makes me better, and I have responsible career opportunities to fully utilize my skills while making a significant contribution to the team's and client's success.",
+      }
+    },
+    "personal_projects": {
+      "name": "Personal Projects",
+      "projects": [
+        {
+          "year": "Jul2021",
+          "project_name": "Digital Invoice",
+          "type": "Web Application"
+        },
+        {
+          "year": "Jun2021",
+          "project_name": "School Quiz Portal",
+          "type": "Web Application"
+        },
+        {
+          "year": "Jan2021",
+          "project_name": "Online Language Tutor",
+          "type": "Web Application"
+        },
+        {
+          "year": "Dec2020",
+          "project_name": "Multiple Account Handling",
+          "type": "Web Application"
+        },
+        {
+          "year": "Jun2020",
+          "project_name": "Hostpital Finder - Covid19",
+          "type": "Android Application"
+        }
+      ]
+    },
+    "education": {
+      "name": "Education",
       "education": {
         "year": "2015/19",
         "course": "Btech",
         "stream": "Computer Science & Engineering",
         "university": "AKTU, Uttar Pradesh"
-      },
-      "technical_skills": [
+      }
+    },
+    "achievements": {
+      "name": "Achievements",
+      "recognition": [
+        "Certificate of participating in Smart India Hackathon 2018 at Chennai.",
+        "Certificate of participating in Digifest 2018 at Jaipur.",
+        "Certificate of participating in Women CO[vi]DE Warriors Hackathon 2020 [Team Mentor].",
+        "Got 3 Inspiring Performance badges recognition in the current project."
+      ]
+    },
+    "certifications": {
+      "name": "Certifications",
+      "certificates": [
         {
-          "skill": "Js"
+          "year": "Nov2020",
+          "project_name": "Javascript Certification",
+          "platform": "HackerRank"
         },
         {
-          "skill": "HTML"
+          "year": "Feb2021",
+          "project_name": "Agile Project Management Certification",
+          "platform": "Udemy"
         },
         {
-          "skill": "CSS"
+          "year": "Apr2021",
+          "project_name": "React JS - Complete Guide for Frontend Web Development",
+          "platform": "Udemy"
         },
         {
-          "skill": "SASS"
-        },
-        {
-          "skill": "Bootstrap"
-        },
-        {
-          "skill": "React.js"
-        },
-        {
-          "skill": "PHP"
-        },
-        {
-          "skill": "Laravel"
-        },
-        {
-          "skill": "Drupal"
-        },
-        {
-          "skill": "Java"
-        },
-        {
-          "skill": "Git"
-        },
-        {
-          "skill": "CI/CD"
+          "year": "Sep2021",
+          "project_name": "DevOps, CI/CD for Beginners",
+          "platform": "Udemy"
         }
-      ],
-      "personal_projects": [
-        
+      ]
+    },
+    "technical_skills": {
+      "name": "Technical Skills",
+      "skills": [
+        "Js",
+        "HTML",
+        "CSS",
+        "SASS",
+        "Bootstrap",
+        "React.js",
+        "PHP",
+        "Laravel",
+        "Drupal",
+        "Java",
+        "Git",
+        "CI/CD"
       ]
     }
-  ]
+  },
+  "about": "Hi, I have great experience in Web development. I have worked on many projects earlier, which makes me better, and I have responsible career opportunities to fully utilize my skills while making a significant contribution to the team's and client's success.",
+  "personal_tech_stack": "Javascript, Jquery, HTML/CSS, Bootstrap, PHP/Laravel, Android, Java, MySql, Google APIs."
 }
