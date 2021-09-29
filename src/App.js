@@ -1,4 +1,5 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
+import useState from 'react-usestateref';
 import './App.css';
 import profile from './images/sidd.png';
 import skill from './images/skills_gadgets.png';
@@ -17,7 +18,7 @@ import TechnicalSkills from './Components/TechnicalSkills';
 const App = () => {
 
   const [data, setData] = useState({});
-  const [design, setDesign] = useState('');
+  const [design, setDesign, designRef] = useState('');
 
   useEffect(() => {
     if (db) {
@@ -28,22 +29,25 @@ const App = () => {
   useEffect(() => {
     if (data.designation !== undefined) {
       let text = data.designation.split('');
-      setInterval((index) => {
+      let count = 0;
+      setInterval(() => {
         if (text.length > 0) {
           const getText = text.shift();
           setDesign(design => `${design}${getText}`);
         }
         else {
-          // if (design.length > 0) {
-
             setDesign(design => design.substring(0, design.length - 1));
-            console.log(design.length);
-            // if (design.length === 0) {
-            //   text = data.message_to_others.split('');
-            // }
-          // }
+            if (designRef.current.length === 0) {
+              if (count % 2 === 0) {
+                text = data.message_to_others.split('');
+                count++;
+              }
+              else {
+                text = data.designation.split('');
+              }
+            }
         }
-      }, 200);
+      }, 250);
     }
   }, [data]);
 
