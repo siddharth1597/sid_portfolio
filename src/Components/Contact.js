@@ -10,11 +10,11 @@ const Contact = (props) => {
           <span className="text-light ms-3 h5 my-auto">{details.location}</span>
         </div>
         <div className="d-flex">
-          <i className="fas  text-light my-auto h5"></i>
+          <i className="fas fa-envelope text-light my-auto h5"></i>
           <span className="text-light ms-3 h5 my-auto">{details.email}</span>
         </div>
         <div className="d-flex">
-          <i className="fas  text-light my-auto h5"></i>
+          <i className="fas fa-mobile-alt text-light my-auto h5"></i>
           <span className="text-light ms-3 h5 my-auto">{details.phone}</span>
         </div>
       </div>

@@ -10,7 +10,7 @@ body {
 }
 
 .App {
-  background-image: url('./wooden-background.jpg');
+  background-image: url('./images/wooden-background.jpg');
   background-size: contain;
   background-attachment: fixed;
 }
@@ -225,5 +225,19 @@ body {
 @media only screen and (max-width: 1400px) {
   .line {
     display: none !important;
+  }
+}
+
+.blink {
+  opacity: 1;
+  animation: fade 1s infinite;
+}
+
+@keyframes fade {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
   }
 }
