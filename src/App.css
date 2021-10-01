@@ -241,3 +241,59 @@ body {
     opacity: 1;
   }
 }
+
+.fa-map-marker-alt {
+  animation: roll 2s infinite;
+  transition: 2s all;
+}
+.fa-envelope {
+  animation: roll 1.5s infinite;
+  transition: 2s all;
+}
+.fa-mobile-alt {
+  animation: roll 2.5s infinite;
+  transition: 2s all;
+}
+
+.fa-linkedin {
+  transform: scale(1);
+  animation: size 1.5s infinite;
+  transition: 2s all;
+}
+
+.fa-globe {
+  animation: round 2s linear infinite;
+}
+
+@keyframes roll {
+  0% {
+    transform: rotate(20deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-20deg);
+  }
+  100% {
+    transform: rotate(-340deg);
+  }
+}
+
+@keyframes size {
+  0%, 100% {
+  transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes round {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

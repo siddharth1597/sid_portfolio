@@ -19,6 +19,7 @@ const App = () => {
 
   const [data, setData] = useState({});
   const [design, setDesign, designRef] = useState('');
+  let CURSOR_SPEED = 180; // milliseconds
 
   useEffect(() => {
     if (db) {
@@ -36,18 +37,18 @@ const App = () => {
           setDesign(design => `${design}${getText}`);
         }
         else {
-            setDesign(design => design.substring(0, design.length - 1));
-            if (designRef.current.length === 0) {
-              if (count % 2 === 0) {
-                text = data.message_to_others.split('');
-                count++;
-              }
-              else {
-                text = data.designation.split('');
-              }
+          setDesign(design => design.substring(0, design.length - 1));
+          if (designRef.current.length === 0) {
+            if (count % 2 === 0) {
+              text = data.message_to_others.split('');
             }
+            else {
+              text = data.designation.split('');
+            }
+            count++;
+          }
         }
-      }, 250);
+      }, CURSOR_SPEED);
     }
   }, [data]);
 
