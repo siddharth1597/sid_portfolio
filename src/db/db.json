@@ -12,9 +12,9 @@
           "current": true,
           "designation": "Web developer",
           "summary": [
-            "Developed the components of the website using JQuery, HTML/CSS/SASS to make the easier way for the customer to create the static as well as dynamic pages.",
-            "Have done the API Integration.",
-            "Create Internet Banking web application in training"
+            "Developed the major components using JQuery, HTML/CSS/SASS to make the easier way for the customer to create the static as well as dynamic pages.",
+            "Have done Restful API Integration.",
+            "Made Internet Banking web application in training"
           ]
         },
         {
@@ -23,8 +23,8 @@
           "current": false,
           "designation": "Full Stack Developer (Part-time)",
           "summary": [
-            "Worked on many projects and takes the ownership and have learned many things from the startup company.",
-            "Worked on the Mobile applications, Web applications and deliver them successfully to clients."
+            "Worked on many projects which includes Mobile, Web apps and takes the ownership, and have learned many things from the startup company.",
+            "Participated in the client discussion for better delivery & understanding and gave technical guidance to the team members."
           ]
         }
       ]
@@ -111,7 +111,8 @@
           "project_name": "DevOps, CI/CD for Beginners",
           "platform": "Udemy"
         }
-      ]
+      ],
+      "linkedin_badges": "Javascript, Jquery, React.js, HTML, CSS, PHP, Android, Frontend-Development."
     },
     "technical_skills": {
       "name": "Technical Skills",
@@ -131,6 +132,6 @@
       ]
     }
   },
-  "about": "Hi, I have great experience in Web development. I have worked on many projects earlier, which makes me better, and I have responsible career opportunities to fully utilize my skills while making a significant contribution to the team's and client's success.",
+  "about": "Hi, I have great experience in Web development. I have worked on many projects, which makes me better, and I have responsible career opportunities to fully utilize my skills while making a significant contribution to the team's and client's success.",
   "personal_tech_stack": "Javascript, Jquery, HTML/CSS, Bootstrap, PHP/Laravel, Android, Java, MySql, Google APIs."
 }

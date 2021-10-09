@@ -233,6 +233,10 @@ body {
   animation: fade 1s infinite;
 }
 
+.h-20 {
+  height: 23%;
+}
+
 @keyframes fade {
   0%, 100% {
     opacity: 0;
@@ -263,6 +267,14 @@ body {
 
 .fa-globe {
   animation: round 2s linear infinite;
+}
+
+.contact-info a:hover, .social-links a:hover {
+  color: rgb(218, 162, 10) !important;
+}
+
+.achievements-info i {
+  margin-top: 4px;
 }
 
 @keyframes roll {

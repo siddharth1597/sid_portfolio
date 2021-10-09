@@ -1,5 +1,5 @@
 const Certifications = (props) => {
-  const {name, certificates} = props.certifications;
+  const {name, certificates, linkedin_badges} = props.certifications;
 
   return(
     <div className="col-md-4 pt-5">
@@ -21,6 +21,10 @@ const Certifications = (props) => {
             )
           })
         }
+        <div className="text-light mt-2">
+          <span className="stream"><i className="fas fa-medal stream"></i> LinkedIn Badges: </span>
+          {linkedin_badges}
+        </div>
       </div>
     </div>
   );

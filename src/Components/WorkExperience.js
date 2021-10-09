@@ -34,8 +34,8 @@ const WorkExperience = (props) => {
       <h1 className="title-heading">{name}</h1>
       
       { company_experience }
-      
-      <div className="line h-25 width-line"></div>
+       
+      <div className="line h-20 width-line"></div>
       <div className="line w-75 height-line"></div>
     </div>
   );
