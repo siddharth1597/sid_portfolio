@@ -4,7 +4,7 @@ const ProfilePicture = (props) => {
 
   return(
     <div className="col-md-4 position-relative profile-info">
-      <div className="line h-100 width-line"></div>
+      <div className="line width-line"></div>
       <div className="bg-warning profile mx-auto mt-5">
         <img className="profile-pic" src={profile_pic} alt="profic pic" />
       </div>

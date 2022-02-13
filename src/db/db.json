@@ -7,12 +7,23 @@
       "name": "Work Experience",
       "company": [
         {
+          "year": "2021",
+          "company_name": "Hiver",
+          "current": true,
+          "designation": "Software Engineer",
+          "summary": [
+            "Having the responsibility to handle all the Frontend activities.",
+            "Developed the new designs for the website for better experience.",
+            "Have integrated the API's and Plugins for best practices."
+          ]
+        },
+        {
           "year": "2019",
           "company_name": "Wipro Ltd.",
-          "current": true,
+          "current": false,
           "designation": "Web developer",
           "summary": [
-            "Developed the major components using JQuery, HTML/CSS/SASS to make the easier way for the customer to create the static as well as dynamic pages.",
+            "Developed the major components using JQuery, HTML/CSS/SASS for the easiness of the client to create the static as well as dynamic pages.",
             "Have done Restful API Integration.",
             "Made Internet Banking web application in training"
           ]
@@ -23,7 +34,7 @@
           "current": false,
           "designation": "Full Stack Developer (Part-time)",
           "summary": [
-            "Worked on many projects which includes Mobile, Web apps and takes the ownership, and have learned many things from the startup company.",
+            "Contributed on many projects which includes Mobile, Web apps and takes the ownership, and have learnt many other things",
             "Participated in the client discussion for better delivery & understanding and gave technical guidance to the team members."
           ]
         }
@@ -51,7 +62,7 @@
         {
           "year": "Jun2021",
           "project_name": "School Quiz Portal",
-          "type": "Web Application"
+          "type": "Web & Mobile Application"
         },
         {
           "year": "Jan2021",
@@ -123,12 +134,12 @@
         "SASS",
         "Bootstrap",
         "React.js",
-        "PHP",
-        "Laravel",
+        "PHP/Laravel",
         "Drupal",
         "Java",
         "Git",
-        "CI/CD"
+        "CI/CD",
+        "Docker"
       ]
     }
   },

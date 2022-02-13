@@ -61,7 +61,7 @@ body {
 }
 
 .resume-details > div:nth-child(2n-1) {
-  padding-left: 64px !important;
+  padding-left: 32px !important;
   padding-right: 32px !important;
 }
 
@@ -119,6 +119,7 @@ body {
 }
 
 .profile-info .line:nth-child(1) {
+  height: 87%;
   top: 15%;
   right: 0;
 }
@@ -145,7 +146,7 @@ body {
 }
 
 .resume-row-1 > div:first-child > .line:last-child {
-  bottom: -75px;
+  bottom: -70px;
 }
 
 .resume-row-1 > div:first-child > .line.width-line::before,
@@ -176,7 +177,7 @@ body {
 .resume-row-1 > div:last-child {
   right: 0;
   padding: 0;
-  top: 32%;
+  top: 24.75%;
 }
 
 .resume-row-2 > div:last-child > .line:last-child {
@@ -197,12 +198,12 @@ body {
 }
 
 .resume-row-2 > div:first-child > .line {
-  bottom: 40%;
+  bottom: 39%;
   right: -18%;
 }
 
 .resume-row-2 > div:first-child > .line:last-child {
-  bottom: 15%;
+  bottom: 19.1%;
   right: -18%;
 }
 
@@ -234,7 +235,7 @@ body {
 }
 
 .h-20 {
-  height: 23%;
+  height: 20%;
 }
 
 @keyframes fade {
@@ -307,5 +308,49 @@ body {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bg-dark {
+    padding: 1.5rem 0 2rem !important;
+  }
+
+  .resume-details > div:first-child {
+    padding-top: 1.5rem !important;
+  }
+
+  .resume-details > div:nth-child(2) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .resume-details > div:nth-child(2n-1) {
+    padding-left: 30px !important;
+  }
+
+  .profile-pic {
+    top: -11px;
+  }
+
+  .description {
+    padding-right: .5rem !important;
+    padding-left: .5rem !important;
+  }
+
+  .front-skill-image {
+    padding-top: 30px;
+  }
+
+  .resume-row-1 > div:nth-child(1) {
+    order: 2;
+  }
+
+  .resume-row-1 > div:nth-child(2) {
+    order: 1;
+  }
+
+  .resume-row-1 > div:nth-child(3) {
+    order: 3;
   }
 }

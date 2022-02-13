@@ -22,7 +22,7 @@ const Education = (props) => {
       </div>
       
       <div className="line w-25 height-line"></div>
-      <div className="line h-25 width-line"></div>
+      <div className="line h-20 width-line"></div>
     </div>
   );
 }

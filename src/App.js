@@ -79,7 +79,7 @@ const App = () => {
         <div className="row resume-details resume-row-2">
           { data.titles !== undefined && <Education education={data.titles.education} /> }
           
-          <div className="col-md-6 pt-5 front-skill-image position-relative">
+          <div className="col-md-6 front-skill-image position-relative">
             <div className="d-flex skill-parent">
               <img className="w-100 mx-auto" src={skill} alt="skills" />
             </div>
