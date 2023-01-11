@@ -12,20 +12,21 @@
           "current": true,
           "designation": "Software Engineer",
           "summary": [
-            "Having the responsibility to handle all the Frontend activities.",
-            "Developed the new designs for the website for better experience.",
-            "Have integrated the API's and Plugins for best practices."
+            "To ensure the company's website is functioning properly for users and customers.",
+            "Build, design, & maintain web pages with optimized techniques.",
+            "Accomplishes company goals by accepting ownership of new and different features which follows code best practices.",
+            "Integrated 3rd party services such as Hubspot, Chillipiper."
           ]
         },
         {
           "year": "2019",
           "company_name": "Wipro Ltd.",
           "current": false,
-          "designation": "Web developer",
+          "designation": "Project Engineer",
           "summary": [
             "Developed the major components using JQuery, HTML/CSS/SASS for the easiness of the client to create the static as well as dynamic pages.",
-            "Have done Restful API Integration.",
-            "Made Internet Banking web application in training"
+            "Took multiple ownership of adding new features & developing dynamic pages using Restful API for the website.",
+            "Participated in Production deployments."
           ]
         },
         {
@@ -34,8 +35,7 @@
           "current": false,
           "designation": "Full Stack Developer (Part-time)",
           "summary": [
-            "Contributed on many projects which includes Mobile, Web apps and takes the ownership, and have learnt many other things",
-            "Participated in the client discussion for better delivery & understanding and gave technical guidance to the team members."
+            "Contributed on many projects which includes Mobile, Web apps and takes the ownership, and have learnt many other things"
           ]
         }
       ]
@@ -48,30 +48,40 @@
         "location": "Bangalore, IN"
       },
       "social_id": {
-        "linkedin": "linkedin.com/in/siddharth-rastogi-bb2a77145"
+        "linkedin": "linkedin.com/in/siddharth-rastogi"
       }
     },
     "personal_projects": {
       "name": "Personal Projects",
       "projects": [
         {
-          "year": "Jul2021",
+          "year": "Dec2022",
+          "project_name": "Inventory (for Exporters)",
+          "type": "Web Application"
+        },
+        {
+          "year": "May2022",
+          "project_name": "WhatsApp2.0",
+          "type": "Web Application"
+        },
+        {
+          "year": "April2022",
+          "project_name": "Spotify2.0",
+          "type": "Web Application"
+        },
+        {
+          "year": "Aug2021",
           "project_name": "Digital Invoice",
           "type": "Web Application"
         },
         {
           "year": "Jun2021",
-          "project_name": "School Quiz Portal",
+          "project_name": "School Quiz App",
           "type": "Web & Mobile Application"
         },
         {
           "year": "Jan2021",
-          "project_name": "Online Language Tutor",
-          "type": "Web Application"
-        },
-        {
-          "year": "Dec2020",
-          "project_name": "Multiple Account Handling",
+          "project_name": "Online Language Learning",
           "type": "Web Application"
         },
         {
@@ -93,23 +103,23 @@
     "achievements": {
       "name": "Achievements",
       "recognition": [
-        "Certificate of participating in Smart India Hackathon 2018 at Chennai.",
-        "Certificate of participating in Digifest 2018 at Jaipur.",
+        "Winner of HiverBee Hackathon 2022 | Hiver",
+        "Received 3 Inspiring Performance Badges recognition 2020-2021 | Wipro",
         "Certificate of participating in Women CO[vi]DE Warriors Hackathon 2020 [Team Mentor].",
-        "Got 3 Inspiring Performance badges recognition in the current project."
+        "Certificate of Participating in Smart India Hackathon 2018"
       ]
     },
     "certifications": {
       "name": "Certifications",
       "certificates": [
         {
-          "year": "Nov2020",
-          "project_name": "Javascript Certification",
-          "platform": "HackerRank"
+          "year": "Jan2023",
+          "project_name": "Typescript Bootcamp, Udemy",
+          "platform": "Udemy"
         },
         {
-          "year": "Feb2021",
-          "project_name": "Agile Project Management Certification",
+          "year": "Sep2021",
+          "project_name": "DevOps, CI/CD for Beginners",
           "platform": "Udemy"
         },
         {
@@ -118,9 +128,14 @@
           "platform": "Udemy"
         },
         {
-          "year": "Sep2021",
-          "project_name": "DevOps, CI/CD for Beginners",
+          "year": "Feb2021",
+          "project_name": "Agile Project Management Certification",
           "platform": "Udemy"
+        },
+        {
+          "year": "Nov2020",
+          "project_name": "Javascript Certification",
+          "platform": "HackerRank"
         }
       ],
       "linkedin_badges": "Javascript, Jquery, React.js, HTML, CSS, PHP, Android, Frontend-Development."
@@ -129,13 +144,15 @@
       "name": "Technical Skills",
       "skills": [
         "Js",
-        "HTML",
-        "CSS",
+        "HTML5",
+        "CSS3",
         "SASS",
+        "Typescript",
         "Bootstrap",
         "React.js",
-        "PHP/Laravel",
+        "Tailwindcss",
         "Drupal",
+        "PHP/Laravel",
         "Java",
         "Git",
         "CI/CD",
@@ -143,6 +160,6 @@
       ]
     }
   },
-  "about": "Hi, I have great experience in Web development. I have worked on many projects, which makes me better, and I have responsible career opportunities to fully utilize my skills while making a significant contribution to the team's and client's success.",
-  "personal_tech_stack": "Javascript, Jquery, HTML/CSS, Bootstrap, PHP/Laravel, Android, Java, MySql, Google APIs."
+  "about": "Excellent knowledge of software design and development especially on the Front-end tech with 4 years of work experience. A motivated individual with in-depth knowledge of languages and development tools, seeking a position in a growth-oriented company where I can utilize my skills while making a significant contribution to the team's and client's success.",
+  "personal_tech_stack": "Javascript, Jquery, Reactjs, HTML5/CSS3, Bootstrap, Tailwindcss, PHP/Laravel, MySql, Restful APIs, AWS, Docker, Android, Java."
 }
