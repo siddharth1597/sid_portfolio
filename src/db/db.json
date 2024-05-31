@@ -1,41 +1,44 @@
 {
   "name": "Siddharth Rastogi",
-  "designation": "A FULL STACK DEVELOPER.",
+  "designation": "A FRONTEND DEVELOPER.",
   "message_to_others": "I Love to develop 💖...", 
   "titles": {
     "work_experience": {
       "name": "Work Experience",
       "company": [
         {
+          "year": "2023",
+          "company_name": "Spinny",
+          "current": true,
+          "designation": "Software Engineer 2",
+          "summary": [
+            "Key member of core tech team, contributing to the development and maintenance of key features on the consumer website.",
+            "Implemented optimization techniques such as INP, TBT, CLS, & LCP to enhance page performance and user experience.",
+            "Utilized modern frameworks - React.js/Redux, Typescript to create dynamic and interactive user experiences.",
+            "Integrated Node.js APIs with MongoDB for improved data management."
+          ]
+        },
+        {
           "year": "2021",
           "company_name": "Hiver",
-          "current": true,
+          "current": false,
           "designation": "Software Engineer",
           "summary": [
             "To ensure the company's website is functioning properly for users and customers.",
             "Build, design, & maintain web pages with optimized techniques.",
-            "Accomplishes company goals by accepting ownership of new and different features which follows code best practices.",
+            "Accomplishes company goals by accepting ownership of new and different features that follows code best practices.",
             "Integrated 3rd party services such as Hubspot, Chillipiper."
           ]
         },
         {
           "year": "2019",
-          "company_name": "Wipro Ltd.",
+          "company_name": "Wipro Technologies",
           "current": false,
           "designation": "Project Engineer",
           "summary": [
-            "Developed the major components using JQuery, HTML/CSS/SASS for the easiness of the client to create the static as well as dynamic pages.",
+            "Developed reusable components in Site Studio, using JQuery, HTML, SCSS for a consistent user interface.",
             "Took multiple ownership of adding new features & developing dynamic pages using Restful API for the website.",
-            "Participated in Production deployments."
-          ]
-        },
-        {
-          "year": "2017",
-          "company_name": "Boxinall Softech",
-          "current": false,
-          "designation": "Full Stack Developer (Part-time)",
-          "summary": [
-            "Contributed on many projects which includes Mobile, Web apps and takes the ownership, and have learnt many other things"
+            "Actively participated in deployments."
           ]
         }
       ]
@@ -45,7 +48,7 @@
       "details": {
         "phone": "+91 8938052752",
         "email": "sidd15597@gmail.com",
-        "location": "Bangalore, IN"
+        "location": "Gurugram, IN"
       },
       "social_id": {
         "linkedin": "linkedin.com/in/siddharth-rastogi"
@@ -54,6 +57,11 @@
     "personal_projects": {
       "name": "Personal Projects",
       "projects": [
+        {
+          "year": "Nov2023",
+          "project_name": "Exporter Calculator",
+          "type": "Web Application"
+        },
         {
           "year": "Dec2022",
           "project_name": "Inventory (for Exporters)",
@@ -143,23 +151,23 @@
     "technical_skills": {
       "name": "Technical Skills",
       "skills": [
-        "Js",
         "HTML5",
-        "CSS3",
-        "SASS",
-        "Typescript",
-        "Bootstrap",
+        "CSS3/SASS",
+        "Javascript",
         "React.js",
-        "Tailwindcss",
-        "Drupal",
+        "Typescript",
+        "Redux",
+        "Nodejs",
         "PHP/Laravel",
-        "Java",
+        "Tailwindcss",
+        "Bootstrap",
         "Git",
         "CI/CD",
-        "Docker"
+        "Docker",
+        "MySQL/MongoDB"
       ]
     }
   },
-  "about": "Excellent knowledge of software design and development especially on the Front-end tech with 4 years of work experience. A motivated individual with in-depth knowledge of languages and development tools, seeking a position in a growth-oriented company where I can utilize my skills while making a significant contribution to the team's and client's success.",
-  "personal_tech_stack": "Javascript, Jquery, Reactjs, HTML5/CSS3, Bootstrap, Tailwindcss, PHP/Laravel, MySql, Restful APIs, AWS, Docker, Android, Java."
+  "about": "Experienced frontend developer with 5 years in software design and development. I focus on high-quality projects, optimizing performance, and user satisfaction. Seeking a challenging role in web development and JavaScript to create innovative and scalable solutions.",
+  "personal_tech_stack": "Javascript, Typescript, Jquery, Reactjs, Redux, HTML5/CSS3, Bootstrap, Tailwindcss, PHP/Laravel, MySql, Firebase, Restful APIs, Android."
 }

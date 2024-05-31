@@ -13,7 +13,7 @@ const WorkExperience = (props) => {
           <div className="ms-3 company-work-details">
             <div className="text-light h5 mb-0 fw-bold">{current.company_name} <span className="current-org">{ current.current && '(Current)'}</span></div>
             <small className="text-light h6 font-semibold"  data-bs-toggle="tooltip">{current.designation}</small>
-            <ul className="text-light mt-2">
+            <ul className="text-light mt-2 experience-points">
               {
                 current.summary.map((info, pos) => {
                   return(
@@ -35,7 +35,7 @@ const WorkExperience = (props) => {
       
       { company_experience }
        
-      <div className="line h-20 width-line"></div>
+      <div className="line h-10 width-line"></div>
       <div className="line w-75 height-line"></div>
     </div>
   );

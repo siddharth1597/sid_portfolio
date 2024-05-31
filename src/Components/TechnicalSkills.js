@@ -9,7 +9,7 @@ const TechnicalSkills = (props) => {
           {
             skills.map((name, pos) => {
               return(
-                <div className="langauge-skills text-light ms-3 h3" key={pos}>{name}</div>
+                <div className="langauge-skills text-light ms-2 h4" key={pos}>{name}</div>
               )
             })
           }
