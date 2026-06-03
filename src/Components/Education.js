@@ -1,30 +1,27 @@
 const Education = (props) => {
-  const {name, education} = props.education;
+  const { name, education } = props.education;
 
-  return(
-    <div className="col-md-3 pt-5 my-auto position-relative">
-      <h1 className="title-heading">{name}</h1>
-      <div className="education-info ms-2">
-        <div className="d-flex">
+  return (
+    <div className="col-12 pt-5 px-3 section-block">
+      <h2 className="title-heading">{name}</h2>
+      <article className="resume-block">
+        <div className="block-tag">
           <div className="tag">
             <div className="rectangle">{education.year}</div>
             <div className="right-triangle"></div>
           </div>
-          <div className="ms-3 company-work-details">
-            <div className="text-light h5 mb-0 fw-bold">{education.course}</div>
-            <small className="h6 stream">{education.stream}</small>
-          </div>
         </div>
-      </div>
-      <div className="d-flex mt-3 ms-2 position-relative">
-        <i className="fas fa-university text-light h5"></i>
-        <div className="text-light h5 ms-3">{education.university}</div>
-      </div>
-      
-      <div className="line w-25 height-line"></div>
-      <div className="line h-20 width-line"></div>
+        <div className="block-body">
+          <h3 className="block-title text-light mb-1">{education.course}</h3>
+          <p className="block-meta stream mb-2">{education.stream}</p>
+          <p className="block-meta mb-0">
+            <i className="fas fa-university me-2" aria-hidden="true"></i>
+            {education.university}
+          </p>
+        </div>
+      </article>
     </div>
   );
-}
+};
 
 export default Education;

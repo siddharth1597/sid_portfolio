@@ -1,34 +1,36 @@
 const PersonalProjects = (props) => {
-  const {name, projects} = props.projects;
+  const { name, projects } = props.projects;
 
-  const personal_projects = projects.map((current, pos) => {
-    return(
-      <div className="d-flex" key={pos}>
+  const personal_projects = projects.map((current, pos) => (
+    <article className="resume-block flex-row presonal-block" key={`${current.project_name}-${pos}`}>
+      <div className="block-tag">
         <div className="tag">
           <div className="rectangle">{current.year}</div>
           <div className="right-triangle"></div>
         </div>
-        <div className="ms-3 company-work-details">
-          <div className="text-light h5 mb-0">{current.project_name}</div>
-          <small className="h6 font-semibold stream">{current.type}</small>
-        </div>
       </div>
-    );
-  });
+      <div className="block-body">
+        <h3 className="block-title text-light mb-1">{current.project_name}</h3>
+        <p className="block-meta stream mb-0">{current.type}</p>
+      </div>
+    </article>
+  ));
 
-  return(
-    <div className="mt-5">
-      <h1 className="title-heading">{name}</h1>
-      <div className="personal-project-info ms-2">
-        {personal_projects}
-
-        <div className="text-light mt-2">
-          <span className="stream"><i className="fas fa-globe stream"></i> Tech Stack: </span>
+  return (
+    <section className="mt-4 section-block" aria-labelledby="projects-heading">
+      <h2 id="projects-heading" className="title-heading">{name}</h2>
+      <div className="block-list projects-scroll">{personal_projects}</div>
+      <article className="resume-block tech-stack-block mt-3">
+        <p className="text-light mb-0 block-meta">
+          <span className="stream">
+            <i className="fas fa-globe stream me-1" aria-hidden="true"></i>
+            Tech Stack:
+          </span>{' '}
           {props.stack}
-        </div>
-      </div>
-    </div>
+        </p>
+      </article>
+    </section>
   );
-}
+};
 
 export default PersonalProjects;

@@ -1,8 +1,6 @@
-import { useEffect } from 'react';
-import useState from 'react-usestateref';
+import { useEffect, useRef, useState } from 'react';
 import './App.css';
 import profile from './images/sidd.png';
-import skill from './images/skills_gadgets.png';
 import db from './db/db.json';
 import Header from './Components/Header';
 import ProfilePicture from './Components/ProfilePicture';
@@ -17,96 +15,90 @@ import TechnicalSkills from './Components/TechnicalSkills';
 
 const App = () => {
 
-  const [data, setData] = useState({});
-  const [design, setDesign, designRef] = useState('');
-  let CURSOR_SPEED = 180; // milliseconds
+  const [data, setData] = useState(db);
+  const [design, setDesign] = useState('');
+  const animRef = useRef(null);
+  const CURSOR_SPEED = 180;
 
   useEffect(() => {
-    if (db) {
-      setData(db);
-    }
-  }, []);
+    const designation = data.designation;
+    const message = data.message_to_others;
 
-  useEffect(() => {
-    if (data.designation !== undefined) {
-      let text = data.designation.split('');
-      let count = 0;
-      setInterval(() => {
-        if (text.length > 0) {
-          const getText = text.shift();
-          setDesign(design => `${design}${getText}`);
-        }
-        else {
-          setDesign(design => design.substring(0, design.length - 1));
-          if (designRef.current.length === 0) {
-            if (count % 2 === 0) {
-              text = data.message_to_others.split('');
-            }
-            else {
-              text = data.designation.split('');
-            }
-            count++;
-          }
-        }
-      }, CURSOR_SPEED);
+    if (!designation || !message) {
+      return undefined;
     }
-  }, [data]);
+
+    animRef.current = {
+      display: '',
+      charQueue: designation.split(''),
+      isDeleting: false,
+      showMessage: false,
+    };
+    setDesign('');
+
+    const tick = () => {
+      const anim = animRef.current;
+      if (!anim) return;
+
+      if (!anim.isDeleting) {
+        if (anim.charQueue.length > 0) {
+          anim.display += anim.charQueue.shift();
+        } else if (anim.display.length > 0) {
+          anim.isDeleting = true;
+        }
+      } else if (anim.display.length > 0) {
+        anim.display = anim.display.slice(0, -1);
+      } else {
+        anim.isDeleting = false;
+        anim.showMessage = !anim.showMessage;
+        const nextText = anim.showMessage ? message : designation;
+        anim.charQueue = nextText.split('');
+      }
+
+      setDesign(anim.display);
+    };
+
+    tick();
+    const intervalId = setInterval(tick, CURSOR_SPEED);
+
+    return () => {
+      clearInterval(intervalId);
+      animRef.current = null;
+    };
+  }, [data.designation, data.message_to_others]);
+
+  const hasTitles = data.titles !== undefined;
 
   return (
-
-    <div className="App container-fluid py-5">
-      <div className="container p-5 bg-dark card">
-
+    <div className="App container-fluid py-4 py-md-5">
+      <div className="container resume-shell p-4 p-md-5 bg-dark card">
         <Header name={data.name} designation={design} />
 
-        {/* Row 1 */}
-        <div className="row mt-4 resume-details resume-row-1 position-relative">
-          
-          { data.titles !== undefined && <WorkExperience work={data.titles.work_experience} /> }
-
-          <ProfilePicture profile_pic={profile} about={data.about} />
-          
-          <div className="col-md-4 pt-5">
-            { data.titles !== undefined && <Contact contact={data.titles.contacts} /> }
-
-            { data.titles !== undefined && <PersonalProjects projects={data.titles.personal_projects} stack={data.personal_tech_stack} /> }
+        <div className="row resume-details resume-row-1 g-3">
+          {hasTitles && <WorkExperience work={data.titles.work_experience} />}
+          <div className="col-lg-4 col-md-6 pt-lg-5 pt-3 sidebar-column">
+            <ProfilePicture profile_pic={profile} about={data.about} />
+            {hasTitles && <Education education={data.titles.education} />}
           </div>
-          
-          <div className="line h-100 width-line"></div>
-        </div>
-
-        {/* Row 2 */}
-        <div className="row resume-details resume-row-2">
-          { data.titles !== undefined && <Education education={data.titles.education} /> }
-          
-          <div className="col-md-6 front-skill-image position-relative">
-            <div className="d-flex skill-parent">
-              <img className="w-100 mx-auto" src={skill} alt="skills" />
-            </div>
-            
-            <div className="line h-25 width-line"></div>
-            <div className="line w-50 height-line"></div>
-            <div className="line width-line"></div>
-          </div>
-          
-          <div className="col-md-3 position-relative">
-            <div className="line w-100 height-line"></div>
-            <div className="line h-25 width-line"></div>
-            <div className="line w-50 height-line"></div>
+          <div className="col-lg-4 col-md-6 pt-lg-5 pt-3 sidebar-column">
+            {hasTitles && <Contact contact={data.titles.contacts} />}
+            {hasTitles && (
+              <PersonalProjects
+                projects={data.titles.personal_projects}
+                stack={data.personal_tech_stack}
+              />
+            )}
           </div>
         </div>
 
-        {/* Row 3 */}
-        <div className="row mt-5 resume-details resume-row-3">
-          {data.titles !== undefined && <Achievements awards={data.titles.achievements} />}
-
-          {data.titles !== undefined && <Certifications certifications={data.titles.certifications} />}
-
-          {data.titles !== undefined && <TechnicalSkills skills={data.titles.technical_skills} />}
+        <div className="row mt-4 resume-details resume-row-3 g-4">
+          {hasTitles && <Achievements awards={data.titles.achievements} />}
+          {hasTitles && <Certifications certifications={data.titles.certifications} />}
+          {hasTitles && <TechnicalSkills skills={data.titles.technical_skills} />}
         </div>
       </div>
     </div>
   );
-}
+};
 
 export default App;

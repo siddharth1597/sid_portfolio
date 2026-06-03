@@ -1,23 +1,19 @@
 const Achievements = (props) => {
-  const {name, recognition} = props.awards;
+  const { name, recognition } = props.awards;
 
-  return(
-    <div className="col-md-4 pt-5">
-      <h1 className="title-heading">{name}</h1>
-      <div className="achievements-info ms-2">
-        {
-          recognition.map((points, pos) => {
-            return(
-              <div className="d-flex achievements-details" key={pos}>
-                <i className="fas fa-star stream"></i>
-                <div className="text-light ms-3 h5">{points}</div>
-              </div>
-            )
-          })
-        }
+  return (
+    <div className="col-lg-4 col-md-6 pt-5 section-block">
+      <h2 className="title-heading">{name}</h2>
+      <div className="block-list">
+        {recognition.map((points, pos) => (
+          <article className="resume-block block-row" key={pos}>
+            <i className="fas fa-star stream block-icon" aria-hidden="true"></i>
+            <p className="text-light block-text mb-0">{points}</p>
+          </article>
+        ))}
       </div>
     </div>
   );
-}
+};
 
 export default Achievements;

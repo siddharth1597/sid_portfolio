@@ -1,44 +1,67 @@
 {
   "name": "Siddharth Rastogi",
-  "designation": "A FRONTEND DEVELOPER.",
-  "message_to_others": "I Love to develop 💖...", 
+  "designation": "SENIOR SOFTWARE ENGINEER | FRONTEND & FULL-STACK",
+  "message_to_others": "Architecting scalable, high-performance web apps...",
   "titles": {
     "work_experience": {
       "name": "Work Experience",
       "company": [
         {
-          "year": "2023",
-          "company_name": "Spinny",
+          "year": "Sep 2024 - Present",
+          "company_name": "Ferns N Petals (FNP)",
+          "location": "Gurugram",
           "current": true,
-          "designation": "Software Engineer 2",
+          "designation": "Senior Software Engineer II",
           "summary": [
-            "Key member of core tech team, contributing to the development and maintenance of key features on the consumer website.",
-            "Implemented optimization techniques such as INP, TBT, CLS, & LCP to enhance page performance and user experience.",
-            "Utilized modern frameworks - React.js/Redux, Typescript to create dynamic and interactive user experiences.",
-            "Integrated Node.js APIs with MongoDB for improved data management."
+            "Architected and delivered scalable Next.js applications with user-centric UI/UX.",
+            "Implemented code splitting, lazy loading, and Akamai CDN caching.",
+            "Designed responsive UI architecture using Material UI and Tailwind CSS.",
+            "Owned Overseas platform architecture with i18n support and CleverTap integration.",
+            "Implemented frontend API caching strategies for performance and SEO improvements.",
+            "Led frontend development team and code review processes.",
+            "Adopted AI-assisted engineering workflows.",
+            "Integrated UPI payment gateway across multiple platforms, processing 120,000+ transactions/month on the web application with high reliability and cross-platform consistency."
           ]
         },
         {
-          "year": "2021",
+          "year": "Mar 2023 - Sep 2024",
+          "company_name": "Spinny",
+          "location": "Gurugram",
+          "current": false,
+          "designation": "Software Engineer II",
+          "summary": [
+            "Improved overall Node.js application performance by 20% through profiling, query optimization, and architectural refactoring.",
+            "Enhanced core website functionality by optimizing key Web Vitals metrics — INP, TBT, CLS, and LCP — resulting in improved Google Search ranking signals and user experience scores",
+            "Redesigned site architecture to improve navigation, accessibility (WCAG standards), and cross-device compatibility, reducing bounce rates on mobile.",
+            "Developed scalable applications using React.js, Redux, and TypeScript.",
+            "Used AI-assisted development workflows to accelerate sprint delivery."
+          ]
+        },
+        {
+          "year": "Dec 2021 - Mar 2023",
           "company_name": "Hiver",
+          "location": "Bengaluru",
           "current": false,
           "designation": "Software Engineer",
           "summary": [
-            "To ensure the company's website is functioning properly for users and customers.",
-            "Build, design, & maintain web pages with optimized techniques.",
-            "Accomplishes company goals by accepting ownership of new and different features that follows code best practices.",
-            "Integrated 3rd party services such as Hubspot, Chillipiper."
+            "Built, designed, and maintained high-quality web pages using JavaScript and React.js, implementing optimized rendering techniques to improve page responsiveness.",
+            "Refactored legacy JavaScript, React.js, and Laravel codebases.",
+            "Improved RESTful API integrations.",
+            "Won the HiverBee Hackathon.",
+            "Contributed to DevOps processes leveraging AWS and Docker, gaining hands-on expertise in container-based deployments and cloud infrastructure."
           ]
         },
         {
-          "year": "2019",
+          "year": "Aug 2019 - Dec 2021",
           "company_name": "Wipro Technologies",
+          "location": "Bengaluru",
           "current": false,
           "designation": "Project Engineer",
           "summary": [
-            "Developed reusable components in Site Studio, using JQuery, HTML, SCSS for a consistent user interface.",
-            "Took multiple ownership of adding new features & developing dynamic pages using Restful API for the website.",
-            "Actively participated in deployments."
+            "Delivered customized technical solutions across client projects, developing dynamic, high-quality web pages using React.js, JavaScript, and RESTful APIs",
+            "Built reusable, accessible UI components using jQuery, HTML, and SCSS within Drupal Site Studio, reducing component development time across teams",
+            "Actively participated in CI/CD pipeline management and deployments using Git and Acquia Cloud, contributing to smoother and faster release cycles.",
+            "Earned three Inspiring Performance Badges for exceptional performance and dedication."
           ]
         }
       ]
@@ -51,12 +74,28 @@
         "location": "Gurugram, IN"
       },
       "social_id": {
-        "linkedin": "linkedin.com/in/siddharth-rastogi"
+        "linkedin": "linkedin.com/in/siddharth-rastogi",
+        "portfolio": "https://portfolio.sidtechtalks.in"
       }
     },
     "personal_projects": {
       "name": "Personal Projects",
       "projects": [
+        {
+          "year": "Dec2025",
+          "project_name": "Customer Relationship Management System",
+          "type": "Web Application"
+        },
+        {
+          "year": "Aug2024",
+          "project_name": "Purchase Inventory",
+          "type": "Web Application"
+        },
+        {
+          "year": "April2024",
+          "project_name": "Sales Management System",
+          "type": "Web Application"
+        },
         {
           "year": "Nov2023",
           "project_name": "Exporter Calculator",
@@ -102,72 +141,100 @@
     "education": {
       "name": "Education",
       "education": {
-        "year": "2015/19",
-        "course": "Btech",
+        "year": "2019",
+        "course": "Bachelor of Technology",
         "stream": "Computer Science & Engineering",
-        "university": "AKTU, Uttar Pradesh"
+        "university": "Moradabad Institute of Technology, Moradabad"
       }
     },
     "achievements": {
       "name": "Achievements",
       "recognition": [
-        "Winner of HiverBee Hackathon 2022 | Hiver",
-        "Received 3 Inspiring Performance Badges recognition 2020-2021 | Wipro",
-        "Certificate of participating in Women CO[vi]DE Warriors Hackathon 2020 [Team Mentor].",
-        "Certificate of Participating in Smart India Hackathon 2018"
+        "Best Performer of the Quarter - Ferns N Petals (FNP)",
+        "Winner - HiverBee Hackathon",
+        "Three Inspiring Performance Badges - Wipro Technologies",
+        "Participant - Smart India Hackathon",
+        "Participant - Digifest Hackathon"
       ]
     },
     "certifications": {
       "name": "Certifications",
       "certificates": [
         {
-          "year": "Jan2023",
-          "project_name": "Typescript Bootcamp, Udemy",
+          "year": "2023",
+          "project_name": "TypeScript Bootcamp",
           "platform": "Udemy"
         },
         {
-          "year": "Sep2021",
-          "project_name": "DevOps, CI/CD for Beginners",
+          "year": "2021",
+          "project_name": "React JS Complete Guide for Frontend Web Dev",
           "platform": "Udemy"
         },
         {
-          "year": "Apr2021",
-          "project_name": "React JS - Complete Guide for Frontend Web Development",
+          "year": "2021",
+          "project_name": "Agile Project Management",
           "platform": "Udemy"
         },
         {
-          "year": "Feb2021",
-          "project_name": "Agile Project Management Certification",
-          "platform": "Udemy"
-        },
-        {
-          "year": "Nov2020",
-          "project_name": "Javascript Certification",
+          "year": "2020",
+          "project_name": "JavaScript Certification",
           "platform": "HackerRank"
         }
       ],
-      "linkedin_badges": "Javascript, Jquery, React.js, HTML, CSS, PHP, Android, Frontend-Development."
+      "linkedin_badges": "Javascript, React.js, HTML, CSS, PHP, Jquery, MySQL, Frontend-Development."
     },
     "technical_skills": {
       "name": "Technical Skills",
-      "skills": [
-        "HTML5",
-        "CSS3/SASS",
-        "Javascript",
-        "React.js",
-        "Typescript",
-        "Redux",
-        "Nodejs",
-        "PHP/Laravel",
-        "Tailwindcss",
-        "Bootstrap",
-        "Git",
-        "CI/CD",
-        "Docker",
-        "MySQL/MongoDB"
+      "categories": [
+        {
+          "label": "Languages & Frameworks",
+          "skills": [
+            "JavaScript (ES6+)",
+            "TypeScript",
+            "React.js",
+            "Next.js",
+            "Node.js",
+            "Laravel",
+            "jQuery",
+            "HTML5"
+          ]
+        },
+        {
+          "label": "State Management",
+          "skills": ["Redux.js", "Redux Toolkit"]
+        },
+        {
+          "label": "Styling & UI",
+          "skills": [
+            "Tailwind CSS",
+            "Material UI",
+            "SASS",
+            "Bootstrap",
+            "CSS3"
+          ]
+        },
+        {
+          "label": "Databases",
+          "skills": ["MongoDB", "MySQL"]
+        },
+        {
+          "label": "DevOps & Tools",
+          "skills": [
+            "Git",
+            "AWS",
+            "Docker",
+            "Jenkins CI/CD",
+            "Acquia Cloud",
+            "Akamai CDN"
+          ]
+        },
+        {
+          "label": "Analytics & Integrations",
+          "skills": ["CleverTap", "Google Analytics", "Clarity"]
+        }
       ]
     }
   },
-  "about": "Experienced frontend developer with 5 years in software design and development. I focus on high-quality projects, optimizing performance, and user satisfaction. Seeking a challenging role in web development and JavaScript to create innovative and scalable solutions.",
-  "personal_tech_stack": "Javascript, Typescript, Jquery, Reactjs, Redux, HTML5/CSS3, Bootstrap, Tailwindcss, PHP/Laravel, MySql, Firebase, Restful APIs, Android."
+  "about": "Results-driven Senior Software Engineer with 6.5+ years of experience architecting and delivering scalable, high-performance web applications. Proven expertise in React.js, Next.js, TypeScript, and Node.js, with a track record of measurable performance gains — including a 20% improvement in system performance at Spinny. Experienced in leading frontend teams, owning full-platform architecture (including internationalization), and integrating AI-assisted workflows to accelerate delivery without compromising quality.",
+  "personal_tech_stack": "JavaScript, TypeScript, React.js, Next.js, Node.js, Redux, Tailwind CSS, Material UI, MongoDB, MySQL, AWS, Docker, Git, CI/CD, CleverTap, RESTful APIs, i18n."
 }

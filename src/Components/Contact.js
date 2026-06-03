@@ -1,32 +1,69 @@
 const Contact = (props) => {
-  const {name, details, social_id} = props.contact;
+  const { name, details, social_id } = props.contact;
 
-  return(
-    <>
-      <h1 className="title-heading">{name}</h1>
-      <div className="contact-info ms-2">
-        <div className="d-flex">
-          <i className="fas fa-map-marker-alt text-light my-auto h5"></i>
-          <a href={`https://www.google.com/maps/place/${details.location}`} target="_blank" rel="noreferrer" className="text-light ms-3 h5 my-auto text-decoration-none" title="Click to check location">{details.location}</a>
-        </div>
-        <div className="d-flex">
-          <i className="fas fa-envelope text-light my-auto h5"></i>
-          <a href={ `mailto:${details.email}`} className="text-light ms-3 h5 my-auto text-decoration-none" title="Click to mail">{details.email}</a>
-        </div>
-        <div className="d-flex">
-          <i className="fas fa-mobile-alt text-light my-auto h5"></i>
-          <a href={ `tel:${details.phone}` } className="text-light ms-3 h5 my-auto text-decoration-none" title="Click to call">{details.phone}</a>
-        </div>
-      </div>
-      <hr className="text-light" />
-      <div className="social-links ms-2">
-        <div className="d-flex">
-          <i className="fab fa-linkedin text-light my-auto h5"></i>
-          <a href={`https://${social_id.linkedin}`} target="_blank" rel="noreferrer" className="text-light ms-3 h5 my-auto text-decoration-none">{social_id.linkedin}</a>
-        </div>
-      </div>
-    </>
+  const contactItems = [
+    {
+      icon: 'fas fa-map-marker-alt',
+      href: `https://www.google.com/maps/place/${encodeURIComponent(details.location)}`,
+      label: details.location,
+      external: true,
+      title: 'View location on map',
+    },
+    {
+      icon: 'fas fa-envelope',
+      href: `mailto:${details.email}`,
+      label: details.email,
+      title: 'Send email',
+    },
+    {
+      icon: 'fas fa-mobile-alt',
+      href: `tel:${details.phone.replace(/\s/g, '')}`,
+      label: details.phone,
+      title: 'Call phone',
+    },
+  ];
+
+  const socialItems = [
+    {
+      icon: 'fab fa-linkedin',
+      href: `https://${social_id.linkedin}`,
+      label: social_id.linkedin,
+      external: true,
+    },
+  ];
+
+  if (social_id.portfolio) {
+    socialItems.push({
+      icon: 'fas fa-globe',
+      href: social_id.portfolio,
+      label: social_id.portfolio.replace(/^https?:\/\//, ''),
+      external: true,
+    });
+  }
+
+  const renderItem = (item, key) => (
+    <article key={key} className="resume-block block-row">
+      <i className={`${item.icon} text-light block-icon`} aria-hidden="true"></i>
+      <a
+        href={item.href}
+        target={item.external ? '_blank' : undefined}
+        rel={item.external ? 'noreferrer' : undefined}
+        className="text-light block-link text-decoration-none"
+        title={item.title}
+      >
+        {item.label}
+      </a>
+    </article>
   );
-}
+
+  return (
+    <section className="section-block" aria-labelledby="contact-heading">
+      <h2 id="contact-heading" className="title-heading">{name}</h2>
+      <div className="block-list">{contactItems.map((item, i) => renderItem(item, `c-${i}`))}</div>
+      <h3 className="visually-hidden">Social links</h3>
+      <div className="block-list mt-3">{socialItems.map((item, i) => renderItem(item, `s-${i}`))}</div>
+    </section>
+  );
+};
 
 export default Contact;

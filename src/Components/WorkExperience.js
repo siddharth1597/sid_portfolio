@@ -1,44 +1,71 @@
-const WorkExperience = (props) => {
+import { useState } from 'react';
 
-  const {name, company} = props.work;
+const INITIAL_BULLETS = 3;
+
+const WorkExperience = (props) => {
+  const { name, company } = props.work;
+  const [expandedJobs, setExpandedJobs] = useState({});
+
+  const toggleJob = (index) => {
+    setExpandedJobs((prev) => ({
+      ...prev,
+      [index]: !prev[index],
+    }));
+  };
 
   const company_experience = company.map((current, pos) => {
-    return(
-      <div key={pos} className="experience-info ms-2">
-        <div className="d-flex">
+    const isExpanded = expandedJobs[pos];
+    const hasMore = current.summary.length > INITIAL_BULLETS;
+    const visibleBullets = isExpanded || !hasMore
+      ? current.summary
+      : current.summary.slice(0, INITIAL_BULLETS);
+
+    return (
+      <article key={pos} className="resume-block">
+        <div className="block-tag">
           <div className="tag">
             <div className="rectangle">{current.year}</div>
             <div className="right-triangle"></div>
           </div>
-          <div className="ms-3 company-work-details">
-            <div className="text-light h5 mb-0 fw-bold">{current.company_name} <span className="current-org">{ current.current && '(Current)'}</span></div>
-            <small className="text-light h6 font-semibold"  data-bs-toggle="tooltip">{current.designation}</small>
-            <ul className="text-light mt-2 experience-points">
-              {
-                current.summary.map((info, pos) => {
-                  return(
-                    <li key={pos}>{info}</li>
-                  );
-                })
-              }
-            </ul>
-          </div>
         </div>
-      </div>
+        <div className="block-body">
+          <h3 className="block-title text-light mb-1">
+            {current.company_name}
+            {current.current && <span className="current-org"> (Current)</span>}
+          </h3>
+          <p className="block-subtitle text-light mb-1">{current.designation}</p>
+          {current.location && (
+            <p className="block-meta mb-2">
+              <i className="fas fa-map-marker-alt me-1" aria-hidden="true"></i>
+              {current.location}
+            </p>
+          )}
+          <ul className="block-list-items mb-0">
+            {visibleBullets.map((info, index) => (
+              <li key={index}>{info}</li>
+            ))}
+          </ul>
+          {hasMore && (
+            <button
+              type="button"
+              className="block-toggle btn btn-link p-0"
+              onClick={() => toggleJob(pos)}
+              aria-expanded={isExpanded}
+            >
+              {isExpanded ? 'Show less' : `+${current.summary.length - INITIAL_BULLETS} more`}
+            </button>
+          )}
+        </div>
+      </article>
     );
-  })
-  
+  });
 
-  return(
-    <div className="col-md-4 pt-5 position-relative">
-      <h1 className="title-heading">{name}</h1>
-      
-      { company_experience }
-       
-      <div className="line h-10 width-line"></div>
-      <div className="line w-75 height-line"></div>
+  return (
+    <div className="col-lg-4 col-md-6 pt-5 section-block work-experience-column">
+      <h2 className="title-heading">{name}</h2>
+      <div className="block-list">{company_experience}</div>
     </div>
   );
-}
+};
 
 export default WorkExperience;
